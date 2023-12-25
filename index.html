@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS WEBSITES</title>
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" media="screen and max-width(1480px)"   href="phone.css">
+
+</head>
+<body>
+    <nav>
+        
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="black-and-white">
+                <img src="https://i.ibb.co/w6Nmyxg/black-and-white.png" alt="black-and-white" ><p>
+                    <h4>THE BLACK AND WHITE TIMES</h4>
+                </p></a> 
+                <div class="nav-links"><ul class="flex">
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')"><h2>SPORTS</h2></li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')"><h2>POLITICS</h2></li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')"><h2>FINANCE</h2></li>
+                    <li class="hover-link nav-item" id="FILM" onclick="onNavItemClick('FILM')"><h2>FILM</h2></li>
+                </ul>
+            </div>
+             <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="search">
+                <button id="search-button" class="search-button">Search</button>
+             </div>
+            
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h4 class="news-source" id="news-source">End Gadget 23/12/2023</h4>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dignissimos saepe tenetur vitae soluta nam corporis voluptate nostrum ullam reprehenderit.
+                </p>
+            </div>
+         </div>
+    </template>
+    <script src="news.js"></script>
+</body>
+</html>
